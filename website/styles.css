@@ -18,6 +18,7 @@
 body {
     font-family: var(--futura);
     color: var(--slate);
+    overflow-x: clip;
 }
 
 header {
@@ -166,8 +167,4 @@ nav ul li a {
     border: 0;
     font-family: var(--futura);
     font-weight: bold;
-}
-
-#searchboxcontainer :focus {
-    width: 300px;
 }
