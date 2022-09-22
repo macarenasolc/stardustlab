@@ -31,6 +31,10 @@ h1 {
     display: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 .logobig {
     width: 100px;
 }
@@ -52,6 +56,15 @@ h1 {
 
 .infinitybuttoncorner :hover {
     cursor:pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#frame01 {
+    height: calc(100vh - 100px);
 }
 
 #introduction {
@@ -137,3 +150,24 @@ nav ul li a {
     text-decoration: none;
 }
 
+#searchboxcontainer {
+    width: min-content;
+    align-self: flex-end;
+    background:aliceblue;
+    border-radius: 5pt;
+    transition-duration: .2s;
+}
+
+#searchboxcontainer > input,button {
+    display: block;
+    height: 2rem;
+    outline:0;
+    background: 0;
+    border: 0;
+    font-family: var(--futura);
+    font-weight: bold;
+}
+
+#searchboxcontainer :focus {
+    width: 300px;
+}
