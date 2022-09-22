@@ -78,7 +78,7 @@ main {
     max-width: 450px;
 }
 
-#fr01 {
+#screen01 {
     position: absolute;
     width: 100%;
     max-width: 600px;
@@ -86,10 +86,9 @@ main {
     left: 35%;
     top: 200px;
     background: linear-gradient(48.31deg, var(--cotton) 4.43%, var(--carmine) 95.5%);
-    border-radius: 5px;
 }
 
-#frnav {
+#screen02 {
     position: relative;
     width: 60%;
     max-width: 400px;
@@ -97,7 +96,6 @@ main {
     left: -10%;
     top: 25px;
     background: #D9D9D9;
-    border-radius: 5px;
     display: flex;
 }
 
@@ -167,4 +165,49 @@ nav ul li a {
     border: 0;
     font-family: var(--futura);
     font-weight: bold;
+}
+
+.subtitle {
+    color: var(--lilla);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1em;
+}
+
+.subtitle em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.sdicaps {
+    font-family: var(--anton);
+    font-size: 4rem;
+    line-height: 1em;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#screen04 {
+    display: flex;
+    width: 400px;
+    background-color: var(--cotton);
+    justify-content: end;
+    min-height: fit-content;
+    height: 30rem;
+    align-items: end;
+    justify-self: center;
+}
+
+#screen04text {
+    display:block;
+    width: 75%;
+    min-width: 300px;
+    margin: 5px;
+}
+
+div[id^='screen'] {
+    outline-color: #401a29;
+    background-color: #318c7b;
+    border-radius: 5px;
 }
