@@ -10,6 +10,9 @@
     --cotton: #9095cd;
     --aqua: #318c7b;
     --beige: #c5997c;
+    --spaceblue: #242B67;
+    --fuscia: #804279;
+    --purple: #a665f0;
     /* FONTS */
     --anton: anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     --futura: 'futura-pt', 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
@@ -78,6 +81,10 @@ main {
     max-width: 450px;
 }
 
+div[id^='screen'] {
+    border-radius: 5px;
+}
+
 #screen01 {
     position: absolute;
     width: 100%;
@@ -85,7 +92,7 @@ main {
     height: 60vh;
     left: 35%;
     top: 200px;
-    background: linear-gradient(48.31deg, var(--cotton) 4.43%, var(--carmine) 95.5%);
+    background: linear-gradient(48.31deg, var(--cotton) 4.43%, var(--pink) 95.5%);
 }
 
 #screen02 {
@@ -122,8 +129,9 @@ main {
     flex: auto;
     align-items: center;
     justify-content: flex-end;
-    font-size:4rem;
+    font-size:5rem;
     line-height:1em;
+    transition: .2s;
 }
 
 #homenav ul li:not(#searchboxcontainer) :hover {
@@ -186,6 +194,7 @@ nav ul li a {
     line-height: 1em;
     margin-top: 0.75rem;
     margin-bottom: 1.5rem;
+    color: var(--spaceblue);
 }
 
 #frame02 {
@@ -201,12 +210,25 @@ nav ul li a {
     z-index: 0;
     height: 60%;
     width: 60%;
+    max-width: 670px;
     background: linear-gradient(117.07deg, #804279 0%, #454892 98.3%);
+}
+
+#screen03 div {
+    color: white;
+    display: flex;
+    position: relative;
+    left: 225px;
+    width: calc(100% - 235px);
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    min-width: 170px;
 }
 
 #screen04 {
     display: flex;
-    width: 400px;
+    width: 30%;
     background-color: #D9D9D9;
     justify-content: end;
     min-height: fit-content;
@@ -215,15 +237,45 @@ nav ul li a {
     position: absolute;
     left: 25%;
     top: calc(100vh + 20vh);
+    min-width: 325px;
+    max-width: 400px;
 }
 
 #textscreen04 {
     display:block;
     width: 75%;
     min-width: 300px;
-    margin: 5px;
+    margin-right: 5px;
+    margin-bottom: 15%;
 }
 
-div[id^='screen'] {
-    border-radius: 5px;
+#screen03 p {
+    margin-bottom: 1em;
+    margin-top: 0;
 }
+
+#startingat {
+    display: block;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 5px;
+    width: 300px;
+}
+
+[id^='sta'] {
+    margin: 0;
+    line-height: 1.05em;
+    color: var(--fuscia);
+    font-size: 1.1em;
+}
+
+#sta2 {
+    font-family: var(--anton);
+    font-size: 2.75em;
+}
+
+#sta3 {
+    font-size: 0.9rem;
+    color:grey; 
+}
+
