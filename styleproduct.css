@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --magenta: #401a29;
+    --carmine: #7b0417;
+    --lilla: #a64e78;
+    --slate: #4b4d64;
+    --darkslate: #000421;
+    --redvelvet: #a60612;
+    --pink: #d84863;
+    --cotton: #9095cd;
+    --aqua: #318c7b;
+    --beige: #c5997c;
+    --spaceblue: #242B67;
+    --fuscia: #804279;
+    --purple: #a665f0;
+    /* FONTS */
+    --anton: anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --futura: 'futura-pt', 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+}
+
+body {
+    font-family: var(--futura);
+    color: var(--slate);
+    overflow-x: clip;
+}
+
+header {
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 380px auto 380px;
+    grid-template-rows: 123px 308px;
+    grid-template-areas:
+    "menu menu menu"
+    ". title .";
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: solid rgba(0, 0, 0, 0.1);
+    grid-area: menu;
+}
+
+.nav_logo{
+    display: flex;
+    /* esto solo quedaria para el icono */
+    font-size: 18px; 
+}
+
+
+
+.nav_menu{
+    display: flex;
+    list-style: none;
+    width: 260px;
+    justify-content: space-between;
+    /* border: solid white; */
+    font-size: 13px;
+}
+
+.nav_menu li{
+   
+    border-radius: 4px;
+    padding: 8px 12px;
+
+}
+
+.nav_menu li a{
+    text-decoration: none;
+
+}
+
+.title {
+    grid-area: title;
+    justify-items: center;
+    text-align: center;
+    
+
+}
+h1{
+    font-family: var(--anton);
+    font-size: 120px;
+}
+h2{
+    font-family: var(--futura);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.product_list{ 
+    padding: 105px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 17px 24px; 
+    align-content: space-between;
+    justify-content: center;
+}
+.product1{
+    justify-self: center;
+}
+
+.product1_picture{
+    align-items: center;
+}
+
+.product1_buttons{
+    display: flex;
+    border: #000421 solid;
+    justify-content: space-around;
+
+
+}
